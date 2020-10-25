@@ -5,13 +5,25 @@
   "author": "Michał M. Fedorczyk",
   "license": "MIT",
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.1",
     "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1"
+    "babel-preset-react": "^6.24.1",
+    "live-server": "^1.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "validator": "^13.1.17",
+    "webpack": "^5.2.0"
   },
-  "description": "��#\u0000 \u0000r\u0000e\u0000a\u0000c\u0000t\u0000-\u0000i\u0000n\u0000d\u0000e\u0000c\u0000i\u0000s\u0000i\u0000o\u0000n\u0000-\u0000a\u0000p\u0000p\u0000\r\u0000 \u0000",
-  "devDependencies": {},
+  "description": "",
+  "devDependencies": {
+    "webpack-cli": "^4.1.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "live-server public/",
+    "build": "webpack --watch",
+    "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch"
   },
   "repository": {
     "type": "git",
