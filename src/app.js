@@ -1,7 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import validator from "validator";
+import IndecisionApp from "./components/IndecisionApp";
 
-const template = <p>Kurwa to jest pies</p>;
-
-ReactDOM.render(template, document.getElementById("app"));
+ReactDOM.render(<IndecisionApp />, document.getElementById("app"));
